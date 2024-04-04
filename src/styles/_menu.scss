@@ -1,0 +1,36 @@
+@use 'compenents/variaveis';
+.menu {
+    background-color: variaveis.$cor_menu_secund;
+    padding: .5em 0em;
+    position: sticky;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__itens {
+        display: flex;
+        align-items: center;
+        font-size: 1.25em;
+        color: variaveis.$cor_hamburguer;
+        gap: .25em;
+        font-family: "Pacifico", cursive;
+        &__logo {
+            width: 40px;
+        }
+    }
+    &__burguer {
+        span {
+            display: block;
+            height: 4px;
+            margin-bottom: 6px;
+            width: 32px;
+            background-color: variaveis.$cor_hamburguer;
+            border-radius: 2px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}

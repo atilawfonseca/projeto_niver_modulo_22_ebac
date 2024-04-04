@@ -1,3 +1,5 @@
-body {
-    background-color: rgb(139, 139, 250);
-}
+@use 'compenents/reset';
+@use 'compenents/container';
+@use 'compenents/variaveis';
+@use 'menu';
+@use 'aside';

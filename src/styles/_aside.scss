@@ -1,0 +1,29 @@
+@use 'compenents/variaveis';
+.aba__lateral {
+    background-color: variaveis.$cor_aba_lateral;
+    border-radius: 0px 0px 0px 12px;
+    padding: .5em 0px;
+    width: 95%;
+    display: block;
+    position: fixed;
+    right: 0px;
+    &__list {
+        padding: .5em 0em;
+        display: block;
+        &__item {
+            margin-bottom: 1em;
+            list-style: none;
+            text-transform: uppercase;
+            border-bottom: 1px solid variaveis.$cor_icon;
+            width: 50%;
+            
+            &__link {
+                text-decoration: none;
+                color: variaveis.$cor_hamburguer;
+                text-align: end;
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
