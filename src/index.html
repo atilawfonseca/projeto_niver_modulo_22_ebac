@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>AniveBike</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="scripts/index.js"></script>
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
     <header class="menu">
         <div class="container">
             <h1 class="menu__itens"><img class="menu__itens__logo" src="img/icones/Circle-icons-bike.png" alt="icone do site">niverBike</h1>
-            <div class="menu__burguer">
+            <div class="menu__burguer" id="burguer">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <ul class="menu__lis">
+                <li class="menu__lis__item">
+                    <a class="menu__lis__item__link" href="">Organizadora</a>
+                </li>
+                <li class="menu__lis__item">
+                    <a class="menu__lis__item__link" href="">Local</a>
+                </li>
+                <li class="menu__lis__item">
+                    <a class="menu__lis__item__link" href="">Premiações</a>
+                </li>
+            </ul>
         </div>
         
     </header>
     <main>
-        <aside class="aba__lateral">
+        <aside class="aba__lateral drop">
             <nav class="container">
                 <ul class="aba__lateral__list">
                     <li class="aba__lateral__list__item">
@@ -38,13 +51,132 @@
             </nav>
         </aside>
         <section class="hero">
+            <div class="container">
+                <div class="hero__item">
+                    <p class="destaque">Participe do aniversário de 35 anos de Atila Fonseca!</p>
+                </div>
+                
+                <div class="hero__item">
+                    <p>Leve 1kg de alimento não perecível que será doado para 
+                        o asilo de Marituba, Rosa Madre. 
+                    </p>
+                </div>
+                <div class="hero__item">
+                    <p id="momento"> 
+                    </p>
+                </div>
+                <span class="hero__aviso">Não perca!!</span>
+            </div>
+        </section>
+        <section class="organizadora">
+            <div class="container">
+                <h2 class="organizadora__title">Trilhas Aventura</h2>
+                <div class="organizadora__list">
+                    <p class="organizadora__list__item"> 
+                        <b>Explorando Novos Horizontes com Trilhas Aventura:</b> 
+                        A Experiência Definitiva em Ciclismo Off-Road
+                        Na vanguarda do mundo do ciclismo off-road, a Trilhas Aventura 
+                        é mais do que uma empresa organizadora de eventos - é uma 
+                        comunidade apaixonada que compartilha o amor pela natureza, 
+                        aventura e superação de desafios. Com um compromisso inabalável 
+                        com a excelência e a segurança, a Trilhas Aventura se destaca 
+                        como líder indiscutível 
+                        na criação de experiências únicas em duas rodas. 
+                    </p>
+                    <p class="organizadora__list__item">
+                        <b>Experiência e Profissionalismo:</b> 
+                        Com anos de experiência no planejamento e execução
+                        de eventos de ciclismo em trilha, a equipe da Trilhas 
+                        Aventura é composta por especialistas apaixonados, cada 
+                        um dedicado a garantir que cada aspecto do evento seja 
+                        perfeito. Desde a seleção meticulosa das trilhas até a 
+                        gestão impecável da logística no dia do evento, a Trilhas 
+                        Aventura oferece um serviço de qualidade excepcional em 
+                        todos os momentos. 
+                    </p>
+                    <p class="organizadora__list__item">
+                        <b>Diversidade de Trilhas:</b> 
+                        Um dos pontos fortes da Trilhas Aventura é sua variedade de 
+                        trilhas cuidadosamente selecionadas. Seja você um iniciante 
+                        buscando uma aventura suave ou um ciclista experiente em 
+                        busca de desafios extremos, há uma trilha perfeita para 
+                        todos os gostos e habilidades. Das montanhas majestosas 
+                        às florestas exuberantes, cada trilha oferece uma experiência 
+                        única e inesquecível. 
+                    </p>
+                    <p class="organizadora__list__item">
+                        <b>Compromisso com a Segurança:</b> 
+                        Na Trilhas Aventura, a segurança dos participantes é 
+                        prioridade máxima. Equipada com equipes de resgate 
+                        altamente treinadas e protocolos de segurança rigorosos, 
+                        a empresa garante que cada evento seja uma experiência 
+                        segura e agradável para todos os envolvidos. Além disso, 
+                        a preservação do meio ambiente é uma preocupação central, 
+                        e a Trilhas Aventura trabalha diligentemente para minimizar 
+                        o impacto ambiental de seus eventos.
+                    </p>
+                    <p class="organizadora__list__item">
+                        <b>Comunidade e Camaradagem:</b> 
+                        Mais do que simplesmente organizar eventos, a Trilhas Aventura construiu 
+                        uma comunidade vibrante de ciclistas apaixonados. Cada evento é uma celebração 
+                        da camaradagem e do espírito de equipe, onde os participantes compartilham 
+                        experiências, desafios e conquistas. É essa atmosfera de união e apoio mútuo 
+                        que torna os eventos 
+                        da Trilhas Aventura verdadeiramente especiais. 
+                    </p>
+                    <p class="organizadora__list__item">
+                        <b>Inovação e Excelência:</b> 
+                        Constantemente buscando a excelência e a inovação, a Trilhas Aventura está 
+                        sempre à frente das últimas tendências e tecnologias no mundo do ciclismo 
+                        off-road. De sistemas de cronometragem avançados a aplicativos móveis 
+                        interativos, a empresa está empenhada em oferecer uma experiência de evento 
+                        de classe mundial que atenda e 
+                        exceda as expectativas dos participantes. 
+                    </p>
+                </div>
+            </div>
+            
 
         </section>
-        
+        <section class="local">
+            <div class="container">
+                <h2>Local</h2>
+                <h3>My Google Maps Demo</h3>
+                <div id="style-selector-control" class="map-control">
+                    <select id="style-selector" class="selector-control">
+                    <option value="default">Default</option>
+                    <option value="silver">Silver</option>
+                    <option value="night">Night mode</option>
+                    <option value="retro" selected="selected">Retro</option>
+                    <option value="hiding">Hide features</option>
+                    </select>
+                </div>
+                <!--The div element for the map -->
+                <div id="map">
+                    
+                </div>
+            </div>
+
+        </section>
+        <section class="premiacoes">
+            <div class="container">
+                <h2>Premiações</h2>
+            </div>
+
+        </section>
     </main>
     <footer>
-
+        <div class="container">
+            <p>
+                &copy; Todos os direitos reservados - 2024
+            </p>
+        </div>
     </footer>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&v=weekly&solution_channel=GMP_CCS_styledmap_v1"
+        defer
+    ></script>
     <script src="scripts/main.js" ></script>
+    
 </body>
 </html>

@@ -31,6 +31,31 @@
         &:hover {
             cursor: pointer;
         }
+
+        @media screen and (min-width:647px){
+            visibility: hidden;
+        }
+    }
+    &__lis {
+        display: none;
+    }
+
+    @media screen and (min-width:647px){
+        &__lis {
+            display: flex;
+            list-style: none;
+
+            &__item {
+                text-transform: uppercase;
+                margin-left: 1em;
+                border-bottom: 1px solid variaveis.$cor_icon;
+                
+                &__link {
+                    text-decoration: none;
+                    color: variaveis.$cor_hamburguer;
+                }
+            }
+        }
     }
 
 }

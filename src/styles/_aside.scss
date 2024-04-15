@@ -7,9 +7,14 @@
     display: block;
     position: fixed;
     right: 0px;
+    width: 70%;
+    transition: 1s;
+    z-index: 1;
+
     &__list {
         padding: .5em 0em;
         display: block;
+        
         &__item {
             margin-bottom: 1em;
             list-style: none;
@@ -26,4 +31,12 @@
             }
         }
     }
+    @media screen and (min-width:647px){
+        visibility: hidden;
+    }
+}
+
+.drop {
+    right: -70%;
+    transition: 1s;
 }

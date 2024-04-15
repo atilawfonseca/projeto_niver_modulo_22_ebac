@@ -1,0 +1,62 @@
+@use 'compenents/variaveis';
+
+.hero {
+    background-color: variaveis.$cor_icon;
+    padding-top: .5em;
+    
+    .container {
+        background: url('../img/atila_bike.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        max-width: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        gap: 1em;
+        padding-top: 1em;
+        position: relative;
+        @media screen and (min-width: 500px) {
+            background-size: contain;
+            background-position:initial;
+            align-items: flex-end;
+            justify-content: end;
+        }
+        @media screen and (min-width: 800px) {
+            justify-content: center;
+        }
+
+        
+    }
+    &__item {
+        background-color: variaveis.$cor_aba_lateral;
+        opacity: 80%;
+        max-width: 450px;
+        width: 100%;
+        border-radius: 2px;
+        p {
+            max-width: 400px;
+            padding: .5em;
+            margin: 1em auto;
+            
+        
+        }
+    }
+
+    &__aviso {
+        text-transform: uppercase;
+        position: absolute;
+        top: 1.5em;
+        left: 0px;
+        transform: rotate(-45deg);
+        color: red;
+        font-size: 2.5em;
+        font-family: "Jersey 10 Charted", sans-serif;
+    }
+}
+.destaque {
+    font-size: 1.5em;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+}

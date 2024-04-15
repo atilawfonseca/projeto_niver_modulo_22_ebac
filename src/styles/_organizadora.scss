@@ -1,0 +1,32 @@
+@use 'compenents/variaveis';
+.organizadora {
+    background-color: variaveis.$cor_aba_lateral;
+    
+    &__list {
+        display: flex;
+        gap: 1.5em;
+        flex-wrap: wrap;
+        
+
+        &__item {
+            max-width: 400px;
+            text-align: justify;
+            background-color: variaveis.$cor_icon;
+            padding: 1em;
+            border-radius: 2px;
+            margin: 0px auto;
+        }
+        
+    }
+
+    &__title {
+        margin-bottom: 2em;
+    }
+}
+
+#momento {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+}
