@@ -1,0 +1,8 @@
+@use 'compenents/variaveis';
+.rodape {
+    background-color: variaveis.$cor_menu;
+    padding: 1em 0px;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}

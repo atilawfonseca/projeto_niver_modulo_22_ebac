@@ -7,8 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Jersey+10+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>AniveBike</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="scripts/index.js"></script>
     <link rel="stylesheet" href="styles/main.scss">
 </head>
 <body>
@@ -22,13 +20,10 @@
             </div>
             <ul class="menu__lis">
                 <li class="menu__lis__item">
-                    <a class="menu__lis__item__link" href="">Organizadora</a>
+                    <a class="menu__lis__item__link" id="link_organizacao" >Organizadora</a>
                 </li>
                 <li class="menu__lis__item">
-                    <a class="menu__lis__item__link" href="">Local</a>
-                </li>
-                <li class="menu__lis__item">
-                    <a class="menu__lis__item__link" href="">Premiações</a>
+                    <a class="menu__lis__item__link" id="link_local">Local</a>
                 </li>
             </ul>
         </div>
@@ -39,13 +34,10 @@
             <nav class="container">
                 <ul class="aba__lateral__list">
                     <li class="aba__lateral__list__item">
-                        <a class="aba__lateral__list__item__link" href="">Organizadora</a>
+                        <a class="aba__lateral__list__item__link" id="aba_organizacao" >Organizadora</a>
                     </li>
                     <li class="aba__lateral__list__item">
-                        <a class="aba__lateral__list__item__link" href="">Local</a>
-                    </li>
-                    <li class="aba__lateral__list__item">
-                        <a class="aba__lateral__list__item__link" href="">Premiações</a>
+                        <a class="aba__lateral__list__item__link" id="aba_local" >Local</a>
                     </li>
                 </ul>
             </nav>
@@ -68,7 +60,7 @@
                 <span class="hero__aviso">Não perca!!</span>
             </div>
         </section>
-        <section class="organizadora">
+        <section class="organizadora" id="sec_organizacao">
             <div class="container">
                 <h2 class="organizadora__title">Trilhas Aventura</h2>
                 <div class="organizadora__list">
@@ -138,34 +130,19 @@
             
 
         </section>
-        <section class="local">
+        <section class="local" id="sec_local">
             <div class="container">
-                <h2>Local</h2>
-                <h3>My Google Maps Demo</h3>
-                <div id="style-selector-control" class="map-control">
-                    <select id="style-selector" class="selector-control">
-                    <option value="default">Default</option>
-                    <option value="silver">Silver</option>
-                    <option value="night">Night mode</option>
-                    <option value="retro" selected="selected">Retro</option>
-                    <option value="hiding">Hide features</option>
-                    </select>
+                <h2 class="local__title">Local</h2>
+                
+                <div class="local__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31910.08009794448!2d-48.1672977!3d-1.3197046!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a456a0b8d86a5b%3A0x508351cbc8dcb40a!2sPousada%20A2!5e0!3m2!1spt-BR!2sbr!4v1713268434021!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p class="local__map__endereco">PA-140 - Pousada A2 - Santa Lucia, Santa Izabel.</p> 
                 </div>
-                <!--The div element for the map -->
-                <div id="map">
-                    
-                </div>
-            </div>
-
-        </section>
-        <section class="premiacoes">
-            <div class="container">
-                <h2>Premiações</h2>
             </div>
 
         </section>
     </main>
-    <footer>
+    <footer class="rodape">
         <div class="container">
             <p>
                 &copy; Todos os direitos reservados - 2024

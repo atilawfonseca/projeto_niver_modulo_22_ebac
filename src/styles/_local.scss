@@ -1,0 +1,25 @@
+@use 'compenents/variaveis';
+.local {
+    background-color: variaveis.$cor_icon;
+    &__title {
+        margin-bottom: 1em;
+    }
+    &__map {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1em;
+        iframe {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 0px auto;
+        }
+        &__endereco {
+            max-width: 280px;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 1em auto;
+        }
+    }
+}
